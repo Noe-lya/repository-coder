@@ -1,0 +1,287 @@
+@font-face {
+  font-family: ´serenity´;
+  src: url(/fonts/Simple-Serenity-Serif.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffeddf;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to left, #ffa9f9 , #fff7ad);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 145px;
+}
+
+#marca {
+  /*Selector { propiedad: valor}*/
+  text-align: center;
+  font-family: ´serenity´;
+  font-size: 80px;
+  padding: 30px;
+  position: absolute;
+  top: -53px;
+  left: 30%;
+}
+
+.item-1{
+  position: absolute;
+  top:16px;
+  right: 80px;
+}
+
+.item-2{
+  position: absolute;
+  top:16px;
+  right: 30px;
+}
+
+.menu-index {
+  font-family: “Faculty Glyphic”;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  position: relative;
+  top: 77px;
+  right: 0px;
+  gap: 25px;
+  /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág */
+}
+
+.menu{
+  font-family: “Faculty Glyphic”;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  position: relative;
+  top: 67px;
+  right: -20px;
+  gap: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+#paginas{
+  font-family: “Faculty Glyphic”;
+  margin-top: 30px;
+  font-size: 80px;
+  color: #8b61c2;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  top: -33px;
+  left: 35%;
+}
+
+.titulo {
+  font-family: “Faculty Glyphic”;
+  font-size: 40px;
+  color: #8b61c2;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  top: 261px;
+  left: -142px;
+}
+
+.subtitulo {
+  font-family: “Faculty Glyphic”;
+  font-size: 30px;
+  color: #8b61c2;
+  text-align: center;
+  position: relative;
+  top: 234px;
+  left: -133px;
+}
+
+h5 {
+  font-family: “Faculty Glyphic”;
+  font-size: 30px;
+  color: #8b61c2;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Prod {
+  display: flex;
+  margin-block: 20px;
+  margin: 30px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+h4 {
+  font-family: “Faculty Glyphic”;
+  font-size: 30px;
+  color: #8b61c2;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h3 {
+  font-family: “Faculty Glyphic”;
+  font-size: 30px;
+  color: black;
+  margin: 30px;
+  padding: 0px;
+}
+
+.texto {
+  font-family: “Faculty Glyphic”;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  margin: 40px;
+  display: block;
+  align-items: center;
+}
+
+.div-video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 300px;
+}
+
+footer {
+  background-color: #8b0639;
+  color: white;
+  font-family: “Faculty Glyphic”;;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: o;
+  padding: 0;
+}
+
+.div-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.link-footer {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  color: black;
+  font-family: “Faculty Glyphic”;
+  background-color: #f7a0b4;
+}
+
+.dueñas {
+  display: flex;
+  justify-content: center;
+}
+
+#reseñas {
+  width: 300px;
+  height: 450px;
+  background-color: #f8ecb6e7;
+  text-align: center;
+  padding: 20px;
+}
+
+#nombre{
+  position: relative;
+  top: -131px;
+}
+
+.estrellas{
+  position: relative;
+  top: -202px;
+}
+
+.resenia{
+  position: relative;
+  top: -233px;
+}
+
+.resenias-general{
+  display: flex;
+  justify-content:flex-start ;
+}
+
+.foto-bautista{
+  position: relative;
+  bottom: 39px;
+}
+
+.foto-rebeca{
+  position: relative;
+  bottom: 34px;
+}
+
+.foto-gustavo{
+  position: relative;
+  bottom: 45px;
+}
+
+.redes {
+  display: flex;
+  justify-content:flex-start ;
+  flex-direction: column;
+  font-family: “Faculty Glyphic”;
+}
+
+h2{
+  position: relative;
+  left: 99px;
+  bottom: 61px;
+  font-size: 20px;
+  font-family: “Faculty Glyphic”;
+}
+
+.formulario {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: “Faculty Glyphic”;
+  justify-content: right;
+}
+
+#carrito .compra {
+  font-family: “Faculty Glyphic”;
+  font-size: 20px;
+}
+
+#wpp{
+  position: absolute;
+  bottom: 34px;
+  right: 40px;
+  width: 50px;
+  position: fixed;
+}
+
+#logo {
+  position: absolute;
+  top: 4px;
+  left: 13px;
+}
