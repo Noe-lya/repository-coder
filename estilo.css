@@ -29,10 +29,47 @@ header {
   font-size: 5.5rem;
   padding: 30px;
   position: absolute;
-  top: 0;
+  top: 17px;
   display: block;
   justify-content: center;
 }
+
+#paginas-h1{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-family: "serenity";
+  font-size: 5.5rem;
+  padding: 30px; 
+  position: absolute;
+  top: -60px;
+  left: 391px;
+}
+
+#pagina-h1-resenia-carrito{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-family: "serenity";
+  font-size: 5.5rem;
+  padding: 30px; 
+  position: absolute;
+  top: -60px;
+  left: 485px;
+}
+
+#pagina-h1-contacto{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-family: "serenity";
+  font-size: 5.5rem;
+  padding: 30px; 
+  position: absolute;
+  top: -60px;
+  left: 423px;
+}
+
 
 .item-1 {
   position: absolute;
@@ -62,18 +99,14 @@ header {
   /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág */
 }
 
-.menu {
-  font-family: “Faculty Glyphic”;
-  font-size: 25px;
-  color: black;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-  margin: 30px;
-  position: relative;
-  top: 67px;
-  right: -20px;
-  gap: 25px;
+.boton-menu{
+  list-style: none;
+}
+
+.boton-menu :hover{
+  background-color:black ;
+  color: #ffeddf;
+  border-radius: 0.5rem;
 }
 
 .link {
@@ -153,10 +186,15 @@ h3 {
   font-family: “Faculty Glyphic”;
   font-size: 25px;
   color: black;
+  background-color: #f7a0b4;
   text-decoration: none;
   margin: 40px;
   display: block;
   align-items: center;
+  width: 46rem;
+  position: relative;
+  left: 16rem;
+  bottom: -1rem;
 }
 
 .div-video {
@@ -183,6 +221,11 @@ footer {
   justify-content: space-between;
   margin: 30px;
   gap: 3rem;
+}
+
+.botones-footer:hover{
+  background-color: black;
+  border-radius: 0.5rem;
 }
 
 .link-footer {
@@ -274,11 +317,12 @@ h2 {
 }
 
 #wpp {
-  position: absolute;
+  position: static;
   bottom: 34px;
   right: 40px;
   width: 50px;
   position: fixed;
+  z-index: 9999; /*para que esté por encima de todo*/
 }
 
 #logo {
@@ -287,84 +331,6 @@ h2 {
   left: 13px;
   width: 200px;
 }
-
-/* @media (max-width: 576px){
-
-  header {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(to left, #ffa9f9 , #fff7ad);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  #marca {
-    text-align: center;
-    font-family: "serenity";
-    font-size: 3.5rem;
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    left: 4rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  #logo {
-    position: absolute;
-    width: 5rem;
-    top: 1rem;
-    left: 0.2rem;
-    
-  }
-
-  #paginas{
-    text-align: center;
-    font-family: “Faculty Glyphic”;
-    color: #8b61c2;
-    font-size: 3.5rem;
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu-index {
-    font-family: “Faculty Glyphic”;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px;
-    position: relative;
-    top: 9px;
-    right:-277px;
-    gap: 25px;
-    /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág 
-  }*/
-
-/* 
-  .menu{
-    font-family: “Faculty Glyphic”;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    display: block;
-    justify-content: center;
-    margin: 30px;
-    position: relative;
-    top: 67px;
-    right: -20px;
-    gap: 25px;
-  }
-
-  .link {
-    text-decoration: none;
-    color: black;
-  } */
 
 @media (max-width: 768px) {
   header {
