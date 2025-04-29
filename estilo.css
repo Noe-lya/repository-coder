@@ -345,15 +345,6 @@ h2{
     /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág 
   }*/ 
 
-  
-  /* .item-1{
-
-  }
-
-  .item-2{
-
-  } */
-
 /* 
   .menu{
     font-family: “Faculty Glyphic”;
@@ -374,207 +365,96 @@ h2{
     color: black;
   } */
 
-  /* #paginas{
 
+@media (max-width: 576px) {
+
+  header {
+    flex-direction: column;
+    line-height: normal;
+    height: 10rem;
   }
 
-  .titulo {
-
-  }
-
-  .subtitulo {
-
-  }
-
-  h5 {
-
-  }
-
-  .Prod {
-
-  }
-
-  h4 {
-
-  }
-
-  h3 {
-
-  }
-
-  .texto {
-
-  }
-
-  .div-video {
-
-  }
-
-  footer {
-
-  }
-
-  .div-footer {
-
-  }
-
-  .link-footer {
-
-  }
-
-  button {
-
-  }
-
-  .dueñas {
-
-  }
-
-  #reseñas {
-  }
-
-  #nombre{
-
-  }
-
-  .estrellas{
-
-  }
-
-  .resenia{
-
-  }
-
-  .resenias-general{
-
-  }
-
-  .foto-bautista{
-  }
-
-  .foto-rebeca{
-
-  }
-
-  .foto-gustavo{
-
-  }
-
-  .redes {
-
-  }
-
-  h2{
-
-  }
-
-  .formulario {
-  }
-
-  #carrito .compra {
-    ;
-  }
-
-  #wpp{
-
+  #marca {
+    font-size: 2.5rem;
+    padding: 1rem;
+    position:relative;
+    top: -81px;
+    left: 0.5rem;
   }
 
   #logo {
-
-  } */
-
-  @media (max-width: 576px) {
-
-    body {
-      padding: 0;
-      margin: 0;
-      background-color: #ffeddf;
-    }
-  
-    header {
-      flex-direction: column;
-      align-items: center;
-      line-height: normal;
-    }
-  
-    #marca {
-      font-size: 2.5rem;
-      padding: 1rem;
-      position: static;
-    }
-  
-    #logo {
-      width: 100px;
-      position: static;
-      margin-top: 10px;
-    }
-  
-    .menu-index {
-      flex-direction: column;
-      align-items: center;
-      font-size: 18px;
-      margin: 10px 0;
-      gap: 10px;
-      position: static;
-    }
-  
-    #paginas {
-      font-size: 2rem;
-      position: static;
-      margin: 1rem auto;
-    }
-  
-    .titulo, .subtitulo {
-      position: static;
-      font-size: 1.5rem;
-      margin: 10px 0;
-    }
-  
-    .Prod {
-      flex-direction: column;
-      align-items: center;
-      margin: 10px;
-    }
-  
-    .texto {
-      font-size: 1rem;
-      margin: 20px;
-    }
-  
-    .div-video {
-      flex-direction: column;
-      align-items: center;
-      position: static;
-      margin: 10px 0;
-    }
-  
-    footer {
-      flex-direction: column;
-      text-align: center;
-      font-size: 12px;
-    }
-  
-    .div-footer {
-      flex-direction: column;
-      align-items: center;
-      margin: 10px;
-    }
-  
-    .resenias-general {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #reseñas {
-      width: 90%;
-      height: auto;
-      margin: 10px auto;
-    }
-  
-    #wpp {
-      width: 40px;
-      right: 10px;
-      bottom: 10px;
-    }
+    width: 5rem;
+    position: static;
+    margin-top: 87px;
   }
-  
+
+  .menu-index {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+    gap: 10px;
+    position: relative;
+    top: -10.5rem;
+    left: 20rem;
+  }
+
+  #paginas {
+    font-size: 2rem;
+    position: static;
+    margin: 1rem auto;
+  }
+
+  .titulo, .subtitulo {
+    position: static;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .Prod {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .texto {
+    font-size: 1rem;
+    margin: 20px;
+  }
+
+  .div-video {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .div-footer {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .resenias-general {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reseñas {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  #wpp {
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
