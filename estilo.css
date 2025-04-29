@@ -5,8 +5,7 @@
   font-style: bold;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
 
 body {
   padding: 0;
@@ -17,7 +16,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background: linear-gradient(to left, #ffa9f9 , #fff7ad);
+  background: linear-gradient(to left, #ffa9f9, #fff7ad);
   background-repeat: no-repeat;
   background-attachment: fixed;
   line-height: 145px;
@@ -35,15 +34,15 @@ header {
   justify-content: center;
 }
 
-.item-1{
+.item-1 {
   position: absolute;
-  top:16px;
+  top: 16px;
   right: 80px;
 }
 
-.item-2{
+.item-2 {
   position: absolute;
-  top:16px;
+  top: 16px;
   right: 30px;
 }
 
@@ -63,7 +62,7 @@ header {
   /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág */
 }
 
-.menu{
+.menu {
   font-family: “Faculty Glyphic”;
   font-size: 25px;
   color: black;
@@ -82,7 +81,7 @@ header {
   color: black;
 }
 
-#paginas{
+#paginas {
   font-family: “Faculty Glyphic”;
   margin-top: 30px;
   font-size: 80px;
@@ -96,23 +95,23 @@ header {
 
 .titulo {
   font-family: “Faculty Glyphic”;
-  font-size: 40px;
+  font-size: 76px;
   color: #8b61c2;
   text-align: center;
   text-decoration: none;
   position: relative;
   top: 261px;
-  left: -142px;
+  left: -240px;
 }
 
 .subtitulo {
   font-family: “Faculty Glyphic”;
-  font-size: 30px;
+  font-size: 41px;
   color: #8b61c2;
   text-align: center;
   position: relative;
   top: 234px;
-  left: -133px;
+  left: -242px;
 }
 
 h5 {
@@ -170,12 +169,12 @@ h3 {
 footer {
   background-color: #8b0639;
   color: white;
-  font-family: “Faculty Glyphic”;;
+  font-family: “Faculty Glyphic”;
   font-size: 14px;
   display: flex;
-  justify-content: space-between;
-  margin: o;
-  padding: 0;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
 }
 
 .div-footer {
@@ -183,11 +182,13 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin: 30px;
+  gap: 3rem;
 }
 
 .link-footer {
   color: white;
   text-decoration: none;
+  gap: 1rem;
 }
 
 button {
@@ -209,49 +210,49 @@ button {
   padding: 20px;
 }
 
-#nombre{
+#nombre {
   position: relative;
   top: -131px;
 }
 
-.estrellas{
+.estrellas {
   position: relative;
   top: -202px;
 }
 
-.resenia{
+.resenia {
   position: relative;
   top: -233px;
 }
 
-.resenias-general{
+.resenias-general {
   display: flex;
-  justify-content:flex-start ;
+  justify-content: flex-start;
 }
 
-.foto-bautista{
+.foto-bautista {
   position: relative;
   bottom: 39px;
 }
 
-.foto-rebeca{
+.foto-rebeca {
   position: relative;
   bottom: 34px;
 }
 
-.foto-gustavo{
+.foto-gustavo {
   position: relative;
   bottom: 45px;
 }
 
 .redes {
   display: flex;
-  justify-content:flex-start ;
+  justify-content: flex-start;
   flex-direction: column;
   font-family: “Faculty Glyphic”;
 }
 
-h2{
+h2 {
   position: relative;
   left: 99px;
   bottom: 61px;
@@ -272,7 +273,7 @@ h2{
   font-size: 20px;
 }
 
-#wpp{
+#wpp {
   position: absolute;
   bottom: 34px;
   right: 40px;
@@ -343,7 +344,7 @@ h2{
     right:-277px;
     gap: 25px;
     /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág 
-  }*/ 
+  }*/
 
 /* 
   .menu{
@@ -365,9 +366,7 @@ h2{
     color: black;
   } */
 
-
-@media (max-width: 576px) {
-
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     line-height: normal;
@@ -375,40 +374,68 @@ h2{
   }
 
   #marca {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     padding: 1rem;
-    position:relative;
-    top: -81px;
+    position: relative;
+    top: -119px;
     left: 0.5rem;
   }
 
   #logo {
-    width: 5rem;
+    width: 8rem;
     position: static;
     margin-top: 87px;
   }
 
   .menu-index {
-    flex-direction: column;
     align-items: center;
     font-size: 18px;
     margin: 10px 0;
     gap: 10px;
+    justify-content: center;
     position: relative;
-    top: -10.5rem;
-    left: 20rem;
+    top: -9.5rem;
   }
+
+  /*HASTA ACÁ YA ESTÁ*/
+
+  .titulo{
+    font-size: 42px;
+  }
+
+  .subtitulo{
+    font-size: 26px;
+  }
+
+  .titulo .subtitulo {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  .div-video {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   #paginas {
     font-size: 2rem;
     position: static;
     margin: 1rem auto;
-  }
-
-  .titulo, .subtitulo {
-    position: static;
-    font-size: 1.5rem;
-    margin: 10px 0;
   }
 
   .Prod {
@@ -420,13 +447,9 @@ h2{
   .texto {
     font-size: 1rem;
     margin: 20px;
-  }
-
-  .div-video {
-    flex-direction: column;
-    align-items: center;
-    position: static;
-    margin: 10px 0;
+    display: block;
+    background-color: rgb(172, 230, 145);
+    border-radius: 1rem;
   }
 
   footer {
