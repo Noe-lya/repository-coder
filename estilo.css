@@ -1,5 +1,5 @@
 @font-face {
-  font-family: ´serenity´;
+  font-family: "serenity";
   src: url(/fonts/Simple-Serenity-Serif.ttf);
   font-weight: bold;
   font-style: bold;
@@ -26,7 +26,7 @@ header {
 #marca {
   /*Selector { propiedad: valor}*/
   text-align: center;
-  font-family: ´serenity´;
+  font-family: "serenity";
   font-size: 5.5rem;
   padding: 30px;
   position: absolute;
@@ -287,7 +287,7 @@ h2{
   width: 200px;
 }
 
-@media (max-width: 768px){
+/* @media (max-width: 576px){
 
   header {
     display: flex;
@@ -295,18 +295,26 @@ h2{
     background: linear-gradient(to left, #ffa9f9 , #fff7ad);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    line-height: 5rem;
   }
 
   #marca {
     text-align: center;
-    font-family: ´serenity´;
+    font-family: "serenity";
     font-size: 3.5rem;
     padding: 2rem;
     position: absolute;
     top: 0;
+    left: 4rem;
     display: flex;
     justify-content: center;
+  }
+
+  #logo {
+    position: absolute;
+    width: 5rem;
+    top: 1rem;
+    left: 0.2rem;
+    
   }
 
   #paginas{
@@ -321,22 +329,6 @@ h2{
     justify-content: center;
   }
 
-  #logo {
-    position: absolute;
-    width: 7rem;
-    top: 0.5rem;
-    left: 0.2rem;
-    
-  }
-
-  /* .item-1{
-
-  }
-
-  .item-2{
-
-  } */
-
   .menu-index {
     font-family: “Faculty Glyphic”;
     font-size: 25px;
@@ -347,12 +339,22 @@ h2{
     flex-wrap: wrap;
     margin: 30px;
     position: relative;
-    top: 6px;
-    right:-230px;
+    top: 9px;
+    right:-277px;
     gap: 25px;
-    /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág */
+    /* position: fixed; para que aparezca siempre en todas las páginas igual|| se mueve con la pág 
+  }*/ 
+
+  
+  /* .item-1{
+
   }
 
+  .item-2{
+
+  } */
+
+/* 
   .menu{
     font-family: “Faculty Glyphic”;
     font-size: 25px;
@@ -370,7 +372,7 @@ h2{
   .link {
     text-decoration: none;
     color: black;
-  }
+  } */
 
   /* #paginas{
 
@@ -480,4 +482,99 @@ h2{
   #logo {
 
   } */
-}
+
+  @media (max-width: 576px) {
+
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: #ffeddf;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      line-height: normal;
+    }
+  
+    #marca {
+      font-size: 2.5rem;
+      padding: 1rem;
+      position: static;
+    }
+  
+    #logo {
+      width: 100px;
+      position: static;
+      margin-top: 10px;
+    }
+  
+    .menu-index {
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      margin: 10px 0;
+      gap: 10px;
+      position: static;
+    }
+  
+    #paginas {
+      font-size: 2rem;
+      position: static;
+      margin: 1rem auto;
+    }
+  
+    .titulo, .subtitulo {
+      position: static;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+  
+    .Prod {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .texto {
+      font-size: 1rem;
+      margin: 20px;
+    }
+  
+    .div-video {
+      flex-direction: column;
+      align-items: center;
+      position: static;
+      margin: 10px 0;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .div-footer {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+  
+    .resenias-general {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #reseñas {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    #wpp {
+      width: 40px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+  
