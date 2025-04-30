@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../estilo.css">
     <link rel="shortcut icon" href="../assets/FABIANIDADES.png" type="image/x-icon">
 </head>
-<body class="pag-productos"> 
+<body> 
+    
     <header> 
         <a class="link" href="../index.html"><img id="logo" src="../assets/FABIANIDADES.png" alt="Logo de la marca" width="200px">
         <h1 id="paginas-h1">Productos</h1>
@@ -20,91 +21,98 @@
         <a href="../pages/contacto.html"><img class="item-1" src="../assets/CONTACTO.png" alt="CONTACTO" width="41px"></a>
         <a href="../pages/carrito.html"><img class="item-2" src="../assets/COMPRAS.png" alt="COMPRAS" width="40px"></a>
     </header>
-    <div class="Prod">
+
+    <section class="section-pag-roductos">
         <a href="https://wa.me/5491176109950"><img id="wpp" src="../assets/WPP.png" alt="Logo de Whatsapp"></a>
-        <article ><h3>15 AÑOS</h3>
-            <img src="../assets/15 años.png" alt="15 AÑOS" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-        <article><h3>BAUTISMO</h3>
-            <img src="../assets/comunión.png" alt="BAUTISMO/COMUNIÓN" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-        <article><h3>1° AÑO</h3>
-            <img src="../assets/1er año.png" alt="1° AÑO" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-        <article><h3>APAGAVELAS</h3>
-            <img src="../assets/apaga velas.png" alt="APAGAVELAS" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-        <article><h3>TEMÁTICOS</h3>
-            <img src="../assets/temáticos.png" alt="TEMÁTICOS" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-        <article><h3>STRAPS</h3>
-            <img src="../assets/straps.png" alt="STRAPS" width="150px">
-            <div class="boton">
-                <p>Precio</p>
-                <label for="Cantidad">Cantidad</label>
-                <input type="number" name="Cantidad" id="Cantidad">
-                <button>Añadir al carrito</button>
-            </div>
-        </article>
-    </div>
+
+        <div class="productos-productos">
+            
+            <article>
+                <div><button class="boton-productos">15 AÑOS</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/15 años.png" alt="15 AÑOS" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+
+            <article>
+                <div><button class="boton-productos">BAUTISMO</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/comunión.png" alt="BAUTISMO/COMUNIÓN" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+            
+            <article>
+                <div><button class="boton-productos"> 1° AÑO</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/1er año.png" alt="1° AÑO" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+
+            <article>
+                <div><button class="boton-productos">APAGAVELAS</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/apaga velas.png" alt="APAGAVELAS" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+
+            <article>
+                <div><button class="boton-productos">TEMÁTICOS</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/temáticos.png" alt="TEMÁTICOS" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+
+            <article>
+                <div><button class="boton-productos">STRAPS</button></div>
+                <img class="sombra-imagenes-productos" src="../assets/straps.png" alt="STRAPS" width="150px"/>
+                <p class="precio">$XXXX</p>
+                <label for="cantidad"></label>
+                <input class="input-cantidad" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+                <div class="agregar-carrito"><button class="boton-productos">Agregar al carrito</button></div>
+            </article>
+
+          </div>
+        </section>
+
     <footer>
-        <div class="div-footer">
-            <a class="link-footer" href="./pages/productos.html"><p>Productos</p></a>
-            <ul>
-                <li>Llaveros 15 años</li>
-                <li>Llaveros 1° año</li>
-                <li>Llaveros Bautismo</li>
-                <li>Llaveros Comunion</li>
-                <li>Straps para celular</li>
-                <li>Llaveros temáticos</li>
-                <li>Apaga velas</li>
-            </ul>
-            <a class="link-footer" href="./index.html"><p>Páginas</p></a>
-            <ul>
-                <li><a class="link-footer" href="./pages/productos.html">Productos y precios</a></li>
-                <li><a class="link-footer" href="./pages/reseñas.html">Reseñas</a></li>
-                <li><a class="link-footer" href="#Sobre-nosotras">Sobre nosotras</a></li>
-                <li>Políticas de privacidad</li>
-            </ul>
-            <a class="link-footer" href="./pages/contacto.html"><p>Contacto</p></a>
-            <ul>
-                <li><a class="link-footer" href="https://wa.me/5491176109950">Whatsapp</a></li>
-                <li><a class="link-footer" href="https://www.instagram.com/fabianidadess_/">Instagram</a></li>
-                <li><a class="link-footer" href="mailto:fabianidades@gmail.com">Mail</a></li>
-            </ul>
-            <ul><p>Buenos Aires, Argentina</p></ul>
-            <ul><p>Copyrigth © 2025 FABIANIDADES | Políticas de privacidad</p></ul> 
-        </div>
+      <div class="div-footer">
+        <ul>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Llaveros 15 años</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Llaveros 1° año</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Llaveros Bautismo</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Llaveros Comunión</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Straps para celular</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Llaveros Temáticos</a></li>
+          <li class="botones-footer"><a class="link-footer" href="./pages/productos.html">Apagavelas</a></li>
+        </ul>
+
+        <ul>
+          <li class="botones-footer"><a class="link-footer" href="./pages/reseñas.html">Reseñas</a></li>
+          <li class="botones-footer"><a class="link-footer" href="#Sobre-nosotras">Sobre nosotras</a></li>
+        </ul>
+        <ul>
+          <li class="botones-footer"><a class="link-footer" href="https://wa.me/5491176109950">Whatsapp</a></li>
+          <li class="botones-footer"><a class="link-footer" href="https://www.instagram.com/fabianidadess_/">Instagram</a></li>
+          <li class="botones-footer"><a class="link-footer" href="mailto:fabianidades@gmail.com">Mail</a></li>
+        </ul>
+        <ul>
+          <p>Buenos Aires, Argentina</p>
+        </ul>
+        <ul>
+          <p>Copyrigth © 2025 FABIANIDADES | Políticas de privacidad</p>
+        </ul>
+      </div>
     </footer>
+
 </body>
 </html>
