@@ -13,49 +13,58 @@
 
       <a class="link" href="../index.html">
       <img id="logo" src="../assets/FABIANIDADES.png" alt="Logo de la marca" width="200px"></a>
+      
       <h1  id="pagina-h1-resenia-carrito">Carrito</h1>
+      
       <nav class="menu-index">
         <li class="boton-menu"><a class="link" href="../index.html">Inicio</a></li>
         <li class="boton-menu"><a class="link" href="../pages/productos.html">Productos</a></li>
         <li class="boton-menu"><a class="link" href="../pages/reseñas.html">Reseñas</a></li>
         <li class="boton-menu"><a class="link" href="../pages/contacto.html">Contacto</a></li>
+      
       </nav>
+      
       <a href="../pages/contacto.html"><img class="item-1" src="../assets/CONTACTO.png" alt="CONTACTO" width="40px"></a>
       <a href="../pages/carrito.html"><img class="item-2" src="../assets/COMPRAS.png" alt="COMPRAS" width="40px"></a>
+    
     </header>
 
-    <h3>Productos</h3>
+    <h4>Productos</h4>
     
     <a href="https://wa.me/5491176109950">
     <img id="wpp" src="../assets/WPP.png" alt="Logo de Whatsapp"></a>
     
     <section id="carrito">
 
-      <img src="../assets/temáticos.png" alt="Llavero temático de gastronomía" width="70px">
-      <p>Llavero temático de gastronomía</p>
-      
-      <label for="Cantidad">Cantidad</label>
-      <input type="number">
+      <div class="producto-carrito">
+        <div class="div-imagen-producto-carrito">
+          <img class="imagen-producto-carrito" src="../assets/temáticos.png" alt="Llavero temático de gastronomía" width="140px">
+        </div>
+        <p class="nombre-carrito">GASTRONOMÍA</p>
+        <p class="precio-carrito">$XXXX</p>
+        <label for="cantidad-carrito"></label>
+        <input class="input-cantidad-carrito" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+        <p class="boton-eliminar">ELIMINAR</p>
+      </div>
 
-      <label for="Precio">Precio</label>
-      <input type="number">
+      <div class="producto-carrito">
+        <div class="div-imagen-producto-carrito">
+          <img class="imagen-producto-carrito" src="../assets/1er año.png" alt="Llavero 1° año" width="140px">
+        </div>
+        <p class="nombre-carrito">KIARA</p>
+        <p class="precio-carrito">$XXXX</p>
+        <label for="cantidad-carrito"></label>
+        <input class="input-cantidad-carrito" type="number" id="cantidad" name="cantidad" min="1" value="1" class="input-cantidad">
+        <p class="boton-eliminar">ELIMINAR</p>
+      </div>
 
-      <button type="button">Eliminar</button>
-
-      <img src="../assets/straps.png" alt="Straps" width="70px">
-      <p>Straps</p>
-
-      <label for="Cantidad">Cantidad</label>
-      <input type="number">
-
-      <label for="Precio">Precio</label>
-      <input type="number">
-
-      <button class="Eliminar" type="button">Eliminar</button>
+      <div class="boton-compra">
+        <p class="boton-comprar">COMPRAR</p>
+      </div>
 
     </section>
 
-    <section class="compra">
+    <!-- <section class="compra">
 
       <label for="Pais">Pais</label>
 
@@ -83,7 +92,7 @@
       <label for="Total">Total</label>
       <input type="number">
 
-    </section>
+    </section> -->
 
     <footer>
       <div class="div-footer">
@@ -114,7 +123,7 @@
         </ul>
       </div>
     </footer>
-    
+
   </body>
   <main></main>
 </html>
