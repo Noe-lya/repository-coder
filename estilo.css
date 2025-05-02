@@ -16,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ffeddf;
-  overflow-x: hidden; /*PARA QUE OCULTE EL CONTENIDO DESBORDADO HORIZONTALMENTE*/
+   /*PARA QUE OCULTE EL CONTENIDO DESBORDADO HORIZONTALMENTE*/
 }
 
 
@@ -30,11 +30,11 @@ header {
   width: 100%;
   
 }
-/*header {
-  
-  
+
+.productos-index img{
+  width: 150px;
 }
-*/
+
 /*INDEX INICIO*/
 
 #marca {
@@ -657,71 +657,89 @@ h2 {
 
 /*MEDIA QUERIES*/
 @media (max-width:578px) {
-
+  body{
+    overflow-x: hidden;
+  }
 /*INICIO INDEX*/
+
+  header{
+    line-height: 38px;
+  }
 
   #marca{
     font-size: 1.5rem;
     position: relative;
     left: -1rem;
+    top: auto;
   }
   #logo {
     position: relative;
-    top: -6px;
+    top: 10px;
     margin-left: -0.5rem;
     left: 0.5rem;
-    width: 3rem;
+    width: 4rem;
   }
  
   .menu-index {
     font-size: 10px; 
     margin: 30px;
     position: relative;
-    top: -10px;
-    left: -267px;
-    gap: 13px;
+    top: 36px;
+    left: -245px;
+    gap: 9px;
     flex-wrap: wrap ;
-  }
-
-  .boton-menu{
     flex-direction: row;
   }
 
-  /*
-  .boton-menu {
-
-  }
   .section-1-index {
-
+    display: none;
   }
-  .div-video {
 
+  h4{
+    font-size: 1.5rem;
+    position: relative;
+    left: -8rem;
+    top: auto;
   }
-  .video {
 
+  h3{
+    font-size: 15px;
   }
-  .texto {
 
+  .productos-index img{
+    width: 7rem ;
   }
+
   .productos-index {
-
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
-  
-  .boton-ver-mas {
 
+  .articulo-productos-f1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 1rem;
   }
-  .section-nosotras {
 
+  .articulo-productos-f2{
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
-  .texto-dueñas {
 
+ .section-nosotras {
+    display: none;
   }
-  .dueñas {
 
-  }
+.footer-1{
+  display: none;
+}
+
   .div-footer {
-
+    margin: 3px;
+    top: 0.5rem;
   }
- */
+
   
 }
