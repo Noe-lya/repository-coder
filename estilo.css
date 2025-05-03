@@ -676,7 +676,7 @@ h2 {
     position: relative;
     top: 14px;
     margin-left: -0.5rem;
-    left: 4.5rem;
+    left: 3.5rem;
     width: 4rem;
   }
  
@@ -695,7 +695,7 @@ h2 {
     grid-row: 1/2;
   }
 
-  .section-1-index {
+  .section-1-index{
     display: none;
   }
 
@@ -714,7 +714,7 @@ h2 {
     width: 7rem ;
   }
 
-  .productos-index {
+  .productos-index{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -736,15 +736,148 @@ h2 {
     display: none;
   }
 
-.footer-1{
-  display: none;
-}
+  .footer-1{
+    display: none;
+  }
 
   .div-footer {
     margin: 3px;
     top: 0.5rem;
     gap: 1rem;
   }
+
 /*FIN INDEX*/
-  
+
+/*INICIO PRODUCTOS*/
+
+#paginas-h1{
+  font-size: 2.5rem;
+  position: relative;
+  left: 7rem;
+  top: -6rem;
+ }
+
+ .item-1 {
+    display: none;
+ }
+ .item-2{
+  display:none;
+ }
+ .productos-productos{
+   grid-template-rows: repeat(4, 1fr);
+   display: grid;
+   gap: 2rem;
+   row-gap: 2rem;
+   grid-template-columns: repeat(2, 1fr);
+  }
+  .articulo-productos-f2-p{
+    grid-column: 2/3;
+    grid-row: 1/1;
+  }
+.articulo-productos-f3{
+  display: none;
+}
+.articulo-productos-f4{
+  display: none;
+}
+.articulo-productos-f5{
+  display: none;
+}
+.articulo-productos-f6{
+  display: none;
+}
+
+/*FIN PRODUCTOS*/
+
+/*INICIO RESEÑAS*/
+
+.reseña-not{
+  display: none;
+}
+
+.resenias-general {
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#pagina-h1-resenia-carrito{
+  font-size: 2.5rem;
+  position: relative;
+  left: 7rem;
+  top: -6rem;
+}
+
+/*FIN RESEÑAS*/
+
+/*INICIO CONTACTO*/
+
+#pagina-h1-contacto{
+  font-size: 2.5rem;
+  position: relative;
+  left: 7rem;
+  top: -6rem;
+}
+
+.redes {
+  justify-content: center;
+}
+
+/*FIN CONTACTO*/
+
+/*INICIO CARRITO*/
+
+#carrito{
+  font-size: 2.5rem;
+  position: relative;
+  left: 7rem;
+  top: -2rem;
+}
+.div-imagen-producto-carrito {
+  margin-left: -4rem;
+}
+
+.nombre-carrito {
+  top: -10rem;
+  left: 8rem;
+}
+
+.h4-carrito{
+  display: none;
+}
+
+.precio-carrito {
+  top: -10.5rem;
+  left: 7rem;
+}
+
+.input-cantidad-carrito {
+  top: -13.98rem;
+  left: 12.5rem;
+}
+
+.boton-eliminar {
+  top: -13.5rem;
+  left: 10rem;
+}
+
+.boton-comprar {
+  left: 3.5rem;
+  bottom: 7rem;
+}
+
+#pagina-h1-resenia-carrito {
+  font-size: 2.5rem;
+  position: relative;
+  left: 7rem;
+  top: -2rem;
+}
+
+/*FIN CARRITO*/
+
+body{
+  overflow-x: hidden;
+}
+
 }
