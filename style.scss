@@ -1,0 +1,666 @@
+@font-face {
+  font-family: "serenity";
+  src: url(/fonts/Simple-Serenity-Serif.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+.faculty-glyphic-regular {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin fuente($fuente,$tamaño-fuente: 1rem){
+    font-family: $fuente;
+    font-size: $tamaño-fuente;
+}
+
+@mixin margin-padding($margin,$padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin alineacion($top,$bottom,$left,$right){
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin alto-ancho($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin display($display,$justify-content){
+    display: $display;
+    justify-content: $justify-content;
+}
+
+@mixin header{
+    background: linear-gradient(to left, #ffa9f9, #fff7ad);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin position($position){
+    position: $position;
+}
+
+@mixin botones{
+    color: #8b0066;
+    border-radius: 50% 20% / 10% 40%;
+    border-radius: 15px;
+    border: 2px solid #f7a0b4;
+    cursor: grab;
+    background-color: #fff0f6;
+    box-shadow: 2px 2px 8px rgba(139, 0, 102, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/*GENERAL*/
+
+body{
+    @include margin-padding(0, 0);
+    background-color: #ffeddf;
+    overflow-x: hidden;
+}
+
+header{
+    @include display(flex, center);
+    @include header;
+    line-height: 145px;
+    width: 100%; 
+}
+
+.productos-index img{
+    width: 150px;
+}
+
+#marca{
+    text-align: center;
+    @include fuente("serenity",5.5rem);
+    @include margin-padding(0,30px);
+    @include position(absolute);
+    @include alineacion(17px, 0, 0, 0);
+    @include display(block, center);
+}
+
+.pagina-h1-resenia-carrito{
+    @include display(block, center);
+    text-align: center;
+    @include fuente("serenity", 5.5rem);
+    @include margin-padding(0, 30px);
+    @include position(absolute);
+    @include alineacion(-8px, 0, 15px, 0);
+}
+
+.pagina-h1-contacto{
+    @extend .pagina-h1-resenia-carrito;
+    top: -8px;
+    left: 24px;
+}
+
+.menu-index{
+    @include fuente("Faculty Glyphic", 25px);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    @include margin-padding(30px, 0);
+    @include position(relative);
+    @include alineacion(77px, 0, 0, 0);
+    gap: 25px; 
+}
+
+.boton-menu{
+  list-style: none;
+  &:hover{
+    background-color: black;
+    color: white !important;
+    border-radius: 0.5rem;
+  }
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+h5{
+    @include fuente("Faculty Glyphic", 66px);
+    @include margin-padding(0, 0);
+    color: #8b61c2;
+    text-align: center;
+}
+
+.productos-index {
+    @include display(flex, center);
+    margin-block: 20px;
+    margin: 30px;
+    justify-items: center;
+    text-align: center;
+}
+
+.section-nosotras{
+  max-height: 525px;
+}
+
+h4{
+    @extend h5;
+}
+
+h3{
+    @include fuente("Faculty Glyphic", 30px);
+    @include margin-padding(30px, 0);
+    color: black
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.texto{
+    animation: fadeIn 2s ease-in;
+    max-width: 715px;
+    @include margin-padding(40px auto, 20px);
+    background: linear-gradient(135deg, #ffe6f0, #f9f0ff);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeSlideIn 2s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    @include fuente("Georgia", 21px);
+    color: #5a2a6c; 
+    line-height: 1.6;
+    text-align: center;
+    @include position(relative);
+    @include alineacion(-24rem, 0, -14rem, 0);
+}
+
+.texto-dueñas{
+    @extend .texto;
+    @include alineacion(0, -1rem, 13rem, 0);
+    width: 46rem;
+}
+
+.div-video{
+    @include display(flex, center);
+    @include position(relative);
+    @include alineacion(2rem, -3rem, 24rem, 0);
+}
+
+.video{
+    border-radius: 1rem;
+    border-style: hidden;
+}
+
+.section-1-index{
+    max-height: 34rem;
+}
+
+footer{
+    background-color:#8b0639;
+    color: white;
+    @include fuente("Faculty Glyphic",14px);
+    @include display(flex, center);
+    @include margin-padding(0, 15px);
+}
+
+.div-footer{
+    @include display(flex, center);
+    align-items: center;
+    justify-content: space-between;
+    @include margin-padding(30px,0 );
+    gap: 3rem;
+    @include alineacion(0.5rem, 0, 0, 0);
+}
+
+.botones-footer:hover{
+    background-color: black;
+    border-radius: 0.5rem;
+    cursor:grab;
+}
+
+.link-footer{
+    color:white;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+button{
+    color: black;
+    background-color: #f59db1;
+    @include alto-ancho(3rem, 6rem);
+    &:hover{
+        background-color: black;
+        color:  #f59db1;
+    }
+}
+
+.sombra-imagenes{
+    border-radius: 1rem;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.boton-ver-mas{
+    @include position(relative);
+    @include alineacion(-9rem, 0, 0, 0);
+    @include botones;
+    @include fuente("Faculty Glyphic", 16px);
+    @include margin-padding(2px 2px 2px 2px, 10px 20px);
+    display: inline-block;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.dueñas{
+    @include display(flex, start);
+    width: 269px;
+    margin-left: 55px;
+    @include position(relative);
+    @include alineacion(-12rem, 176px, 0, 0);
+    border-radius: 2rem;    
+}
+
+.boton-productos{
+    @extend .boton-ver-mas;
+    top: -1.1rem;    
+    font-size: 12px;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+/*INDEX*/
+
+.pagina-h1-productos{
+    @extend .pagina-h1-resenia-carrito;
+    max-height: 30rem;
+    left: 39px;
+    top: -1rem;
+}
+
+.sombra-imagenes-productos{
+    @extend .sombra-imagenes;
+    display: flex;
+    gap: 3rem;
+}
+
+.productos-productos{
+    @include display(flex, center);
+    justify-items: center;
+    text-align: center;
+    margin-block: 20px;
+    margin: 30px;
+    gap: 3rem;
+    max-height: 32rem;
+    animation: fadeIn 1.3s ease-in;
+
+    a{
+        img{
+            cursor: zoom-in ;
+        }
+    }
+}
+
+.agregar-carrito{
+    @include position (relative);
+    @include alineacion(-50px, -2rem, 0, 0);
+}
+
+.input-cantidad{
+    @extend .boton-ver-mas;
+    display: block; /* Asegura salto de línea */
+    margin-top: 89px;
+    margin-left: 17px;
+    border-radius: 12px;    
+    width: 70px;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.precio{
+    @include botones;
+    @include fuente("Faculty Glyphic",16px);
+    display: inline-block;
+    @include position (relative);
+    top:3rem;
+    @include margin-padding(2px 2px 2px 2px, 10px 20px);
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+
+/*RESEÑAS*/
+
+.reseñas{
+    @include alto-ancho(450px,300px);
+    background-color: #f8ecb6e7;
+    text-align: center;
+    @include margin-padding (0, 20px);
+}
+
+.nombre{
+    @include position (relative);
+    @include alineacion(-131px, 0 , 0, 0);
+}
+
+.estrellas{
+    @extend .nombre;
+    top: -202px;
+}
+
+.resenia{
+    @extend .nombre;
+    top: -233px; 
+}
+
+.resenias-general{
+    @include display (flex, flex-start);
+}
+
+.foto-bautista{
+    @include position (relative);
+    @include alineacion(-38px, 39px, 0, 0);
+}
+
+.foto-rebeca{
+    @extend .foto-bautista;
+    bottom: 34px;
+}
+
+.foto-gustavo{
+    @extend .foto-bautista;
+    bottom: 45px;
+}
+
+/*CONTACTO*/
+
+.redes{
+    @include display (flex, flex-start);
+    flex-direction: column;
+    font-family: “Faculty Glyphic”;
+    
+}
+
+.wig{
+    @include position(relative);
+    @include alineacion(4rem, 0, 0.5rem, 0);
+}
+
+h2{
+    @include position (relative);
+    @include alineacion(0, 61px, 99px, 0);
+    @include fuente (“Faculty Glyphic”, 20px);
+}
+
+.formulario{
+    @extend .redes;
+    justify-content: flex-end;
+    justify-content: right; 
+}
+
+/*CARRITO*/
+
+#carrito {
+    @include fuente("Faculty Glyphic", 20px);
+}
+
+.compra{
+    @extend #carrito;
+}
+
+.div-imagen-producto-carrito{
+    max-height: 10rem;
+    display: block;
+    margin-left: 7rem;
+    padding-top: 2rem;
+}
+
+.imagen-producto-carrito{
+  @extend .sombra-imagenes;
+}
+
+.nombre-carrito{
+    @include fuente("Faculty Glyphic", 24px);
+    @include position (relative);
+    @include alineacion(-5rem, 0, 19rem, 0);
+}
+
+.precio-carrito{
+    @extend .boton-ver-mas;
+    @include alineacion(-8.5rem, 0, 34rem, 0);
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.input-cantidad-carrito{
+    @extend .boton-ver-mas;
+    @include display (block, center);
+    margin-top: 15px;
+    margin-bottom: -4px;
+    @include alineacion(-11.98rem, 0, 45.5rem, 0);
+    @include alto-ancho(0.9rem, 70px);
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.boton-eliminar{
+    @extend .boton-ver-mas;
+    @include alineacion(-14.5rem, 0, 58rem, 0);
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.boton-comprar{
+    @extend .boton-ver-mas;
+    @include alineacion(-110px, 0, 36rem, 0);
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+#wpp{
+    @include alineacion(514px, 0, 1271px, 0);
+    width: 50px;
+    @include position(fixed);
+    z-index: 9999;
+}
+
+.logo{
+    @include position(absolute);
+    @include alineacion(4px, 0, 13px, 0);
+    width: 200px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 578px){
+    /*INDEX*/
+    header{
+        line-height: 38px;
+    }
+
+    #marca{
+        font-size: 2.5rem;
+        @include position(relative);
+        @include alineacion(auto, 0, 9rem, 0);
+    }
+
+    .logo{
+        @include position(relative);
+        @include alineacion(14px, 0, 3.5rem, 0);
+        width: 4rem;
+        margin-left: -0.5rem;
+    }
+
+    .menu-index{
+        @include position(relative);
+        @include alineacion(36px, 0, -177px, 0);
+        @include margin-padding(30px, 0);
+        font-size: 14px;
+        gap: 9px;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .boton-menu{
+        grid-row: 1/2;
+    }
+
+    .section-1-index{
+        display: none;
+    }
+
+    .section-nosotras{
+        display: none;
+    }
+
+    .footer-1{
+        display: none;
+    }
+
+    .div-footer{
+        @include alineacion(0.5rem,0,0,0);
+        margin: 3px;
+        gap: 1rem;
+    }
+
+    h4{
+        @include position(relative);
+        @include alineacion(auto, 0, 0, 0);
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .productos-index img{
+        width: 7rem ;
+    }
+
+    .productos-index{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+
+    .articulo-productos-f1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 1rem;
+    }
+
+    .articulo-productos-f2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    /*PRODUCTOS*/
+    
+    .articulo-productos-f3 .articulo-productos-f4 .articulo-productos-f5 .articulo-productos-f6{
+        display: none;
+    }
+
+    .productos-productos{
+        @include display(grid, center);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+        row-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articulo-productos-f2-p{
+        grid-column: 2/3;
+        grid-row: 1/1;
+    }
+
+    /*RESEÑAS*/
+
+    .reseña-not{
+        display: none;
+    }
+
+    .resenias-general{
+        @include display (block, center);
+        justify-items: center;
+        align-items: center;
+    }
+
+    #pagina-h1-resenia-carrito #pagina-h1-contacto{
+        @include fuente (“Faculty Glyphic”, 2.5rem);
+        @include position (relative);
+        @include alineacion(-6rem, 0, 7rem, 0);  
+    }
+
+    /*CONTACTO*/
+
+    .redes{
+        justify-content: center;
+    }
+
+    /*CARRITO*/
+
+    #carrito{     
+        @include position(relative);
+        @include alineacion(-2rem, 0, 7rem, 0);
+        font-size: 2.5rem;
+    }
+
+    .div-imagen-producto-carrito{
+        margin-left: -4rem;
+    }
+
+    .nombre-carrito{
+        @include alineacion(-10rem, 0, 8rem, 0);
+    }
+
+    .precio-carrito{
+        @include alineacion(-10.5rem, 0, 7rem, 0);
+    }
+
+    .input-cantidad-carrito{
+        @include alineacion(-13.98rem, 0, 12.5rem, 0);
+    }
+
+    .boton-eliminar{
+        @include alineacion(-13.5rem, 0, 10rem, 0);
+    }
+
+    .boton-comprar{
+        @include alineacion(0, 7rem, 3.5rem, 0);
+    }
+
+    .pagina-h1-resenia-carrito{
+        font-size: 2.5rem;
+        @include position(relative);
+        @include alineacion(-2rem, 0, 7rem, 0);
+    }
+
+    .h4-carrito{
+        display: none;
+    }
+
+}

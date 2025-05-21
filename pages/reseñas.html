@@ -6,20 +6,21 @@
     <title>Fabianidades</title>
     <link rel="stylesheet" href="../estilo.css">
     <link rel="shortcut icon" href="../assets/FABIANIDADES.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
 
-        <a class="link" href="../index.html"><img id="logo" src="../assets/FABIANIDADES.png" alt="Logo de la marca" width="200px">
-        <h1 id="pagina-h1-resenia-carrito">Reseñas</h1>
+        <a class="link" href="../index.html"><img class="logo" src="../assets/FABIANIDADES.png" alt="Logo de la marca" width="200px">
+        <h1 class="pagina-h1-resenia-carrito">Reseñas</h1>
         <nav class="menu-index">
             <li class="boton-menu"><a class="link" href="../index.html">Inicio</a></li>
-            <li class="boton-menu"><a class="link" href="../pages/productos.html">Productos</a></li>
-            <li class="boton-menu"><a class="link" href="../pages/contacto.html">Contacto</a></li>
-            <li class="boton-menu"><a class="link" href="../pages/carrito.html">Carrito</a></li>
+            <li class="boton-menu"><a class="link" href="./productos.html">Productos</a></li>
+            <li class="boton-menu"><a class="link" href="#">Reseñas</a></li>
+            <li class="boton-menu"><a class="link" href="./contacto.html">Contacto</a></li>
+            <li class="boton-menu"><a class="link" href="./carrito.html">Carrito</a></li>
         </nav>
-        <a href="../pages/contacto.html"><img class="item-1" src="../assets/CONTACTO.png" alt="CONTACTO" width="40px"></a>
-        <a href="../pages/carrito.html"><img class="item-2" src="../assets/COMPRAS.png" alt="COMPRAS" width="40px"></a>
+        
     
     </header>
     
@@ -27,30 +28,30 @@
     
         <a href="https://wa.me/5491176109950"><img id="wpp" src="../assets/WPP.png" alt="Logo de Whatsapp"></a> 
         
-        <div id="reseñas">
+        <div class="reseñas" data-aos="zoom-in" data-aos-duration="1000">
             <img src="../assets/ELENA.png" alt="ELENA" width="150px">
-            <h3 id="nombre">ELENA</h3>
+            <h3 class="nombre">ELENA</h3>
             <img class="estrellas" src="../assets/5 estrellas.png" alt="5 estrellas" width="150px">
             <p class="resenia">"Me encantaron los llaveros, son súper lindos y personalizados con mucho detalle. Se nota el amor con el que están hechos. Fueron el recuerdo perfecto para mi evento, ¡todos mis invitados quedaron encantados! Sin duda volveré a pedir más. ¡Gracias por tanta dedicación!"</p>
         </div>
     
-        <div id="reseñas">
+        <div class="reseñas" data-aos="zoom-in" data-aos-duration="1010">
             <img class="foto-bautista" src="../assets/BAUTISTA.png" alt="BAUTISTA" width="150px"> 
-            <h3 id="nombre">BAUTISTA</h3> 
+            <h3 class="nombre">BAUTISTA</h3> 
             <img class="estrellas" src="../assets/5 estrellas.png" alt="5 estrellas" width="150px">
             <p class="resenia">"Nunca pensé que un apaga velas fuera tan útil hasta que probé este. Apaga la llama sin problemas y sin ese molesto humo que queda cuando soplas. Además, el diseño es hermoso y queda perfecto con mi decoración. ¡100% recomendado para quienes aman las velas!"</p>
         </div> 
-    
-        <div id="reseñas" class="reseña-not">
+
+        <div class="reseñas" data-aos="zoom-in" data-aos-duration="1020">
             <img class="foto-rebeca" src="../assets/REBECA.png" alt="REBECA" width="150px"> 
-            <h3 id="nombre">REBECA</h3>
+            <h3 class="nombre">REBECA</h3>
             <img class="estrellas" src="../assets/5 estrellas.png" alt="5 estrellas" width="150px">
             <p class="resenia">"El strap para celular es increíble, súper práctico y además muy bonito. Ahora llevo mi teléfono con más seguridad y estilo. Me encantó la calidad y los colores disponibles. ¡Definitivamente es un accesorio que todos deberían tener!"</p>
         </div>
-    
-        <div id="reseñas" class="reseña-not">
+
+        <div class="reseñas" data-aos="zoom-in" data-aos-duration="1030">
             <img class="foto-gustavo" src="../assets/GUSTAVO.png" alt="GUSTAVO" width="150px"> 
-            <h3 id="nombre">GUSTAVO</h3> 
+            <h3 class="nombre">GUSTAVO</h3> 
             <img class="estrellas" src="../assets/5 estrellas.png" alt="5 estrellas" width="150px">
             <p class="resenia">"¡Me encantó el llavero temático de cocina! Es perfecto para los amantes de la gastronomía. Los detalles son increíbles, desde los mini utensilios hasta el diseño personalizado. La calidad es excelente y se nota el cuidado en cada pieza. Lo compré como regalo y fue un éxito total. ¡Súper recomendado para chefs, reposteros o simplemente fanáticos de la cocina!"</p>
         </div>
@@ -86,6 +87,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 <main></main>
 </html>
