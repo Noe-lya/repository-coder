@@ -326,7 +326,7 @@ button{
 }
 
 .agregar-carrito{
-    @include position (relative);
+    @include position(relative);
     @include alineacion(-50px, -2rem, 0, 0);
 }
 
@@ -346,7 +346,7 @@ button{
     @include botones;
     @include fuente("Faculty Glyphic",16px);
     display: inline-block;
-    @include position (relative);
+    @include position(relative);
     top:3rem;
     @include margin-padding(2px 2px 2px 2px, 10px 20px);
     &:hover{
@@ -362,11 +362,11 @@ button{
     @include alto-ancho(450px,300px);
     background-color: #f8ecb6e7;
     text-align: center;
-    @include margin-padding (0, 20px);
+    @include margin-padding(0, 20px);
 }
 
 .nombre{
-    @include position (relative);
+    @include position(relative);
     @include alineacion(-131px, 0 , 0, 0);
 }
 
@@ -382,11 +382,11 @@ button{
 }
 
 .resenias-general{
-    @include display (flex, flex-start);
+    @include display(flex, flex-start);
 }
 
 .foto-bautista{
-    @include position (relative);
+    @include position(relative);
     @include alineacion(-38px, 39px, 0, 0);
 }
 
@@ -403,7 +403,7 @@ button{
 /*CONTACTO*/
 
 .redes{
-    @include display (flex, flex-start);
+    @include display(flex, flex-start);
     flex-direction: column;
     font-family: “Faculty Glyphic”;
     @include position(relative);
@@ -416,9 +416,9 @@ button{
 }
 
 h2{
-    @include position (relative);
+    @include position(relative);
     @include alineacion(0, 61px, 99px, 0);
-    @include fuente ("Faculty Glyphic", 20px);
+    @include fuente("Faculty Glyphic", 20px);
 }
 
 .formulario{
@@ -444,7 +444,7 @@ h2{
 }
 
 .form-right{
-    @include display (flex, end);
+    @include display(flex, end);
     @include position(relative);
     @include alineacion(-21rem, 0rem, -27rem, 0rem);
     gap: 2rem;
@@ -558,11 +558,6 @@ h2{
         grid-template-rows: 1fr;
     }
 
-    .menu-inicio{
-        @include position(relative);
-        @include alineacion(1rem, 0, 0, 0);
-    }
-
     .boton-menu{
         grid-row: 1/2;
     }
@@ -616,14 +611,18 @@ h2{
     }
 
     /*PRODUCTOS*/
-    
-    .h1-productos{
-        @include fuente("Faculty Glyphic", 2.5rem);
+
+    .inicio{
         @include position(relative);
-        @include alineacion(-5rem, 0, 14rem, 0);
+        @include alineacion(-38px, 0, 4px, 0);
     }
 
-    .articulo-productos-f3 .articulo-productos-f4 .articulo-productos-f5 .articulo-productos-f6{
+    .menu-responsive{
+        @include position(relative);
+        @include alineacion(31px,0,37px,0);
+    }
+
+    .articulo-productos-f3, .articulo-productos-f4, .articulo-productos-f5, .articulo-productos-f6{
         display: none;
     }
 
@@ -647,21 +646,15 @@ h2{
     }
 
     .resenias-general{
-        @include display (block, center);
+        @include display(block, center);
         justify-items: center;
         align-items: center;
     }
 
-    .pagina-h1-resenia-carrito {
-        @include fuente ("Faculty Glyphic", 2.5rem);
-        @include position (relative);
-        @include alineacion(0rem, 0, 11rem, 0);  
-    }
-
-    .pagina-h1-contacto{
+    .pagina-h1-resenia-carrito, .pagina-h1-contacto{
         @include fuente("Faculty Glyphic", 2.5rem);
-        @include position (relative);
-        @include alineacion(0rem, 0, 11rem, 0);
+        @include position(relative);
+        @include alineacion(1rem, 0, 14rem, 0);  
     }
 
     /*CONTACTO*/
@@ -674,7 +667,7 @@ h2{
 
     #carrito{     
         @include position(relative);
-        @include alineacion(-2rem, 0, 7rem, 0);
+        @include alineacion(1rem, 0, 7rem, 0);
         font-size: 2.5rem;
     }
 
@@ -691,7 +684,8 @@ h2{
     }
 
     .input-cantidad-carrito{
-        @include alineacion(-13.98rem, 0, 12.5rem, 0);
+        @include alto-ancho(1.3rem, 2rem);
+        @include alineacion(-14.3rem, 0, 14.5rem, 0);
     }
 
     .boton-eliminar{
@@ -699,6 +693,34 @@ h2{
     }
 
     .boton-comprar{
-        @include alineacion(0, 7rem, 3.5rem, 0);
+        @include alineacion(-8rem, 7rem, 3.5rem, 0);
+    }
+
+    .form-right{
+        @include alineacion(-1rem, 0, -12rem, 0);
+    }
+
+    .menu-responsive-carrito{
+        @include position(relative);
+        @include alineacion(2rem, 0, 3.5rem, 0);
+        height: 10rem;
+    }
+
+    .h1-productos{
+        @include fuente("Faculty Glyphic", 2.5rem);
+        @include position(relative);
+        @include alineacion(1rem, 0, 15rem, 0);
+    }
+    
+    .red-social{
+        display:none;
+    }
+
+    .h3-contactos{
+        @include alineacion(0, 0, 8rem, 0);
+    }
+
+    body{
+        overflow-x: hidden;
     }
 }

@@ -613,13 +613,6 @@ h2 {
     display: grid;
     grid-template-rows: 1fr;
   }
-  .menu-inicio {
-    position: relative;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   .boton-menu {
     grid-row: 1/2;
   }
@@ -665,16 +658,21 @@ h2 {
     grid-row: 2/3;
   }
   /*PRODUCTOS*/
-  .h1-productos {
-    font-family: "Faculty Glyphic";
-    font-size: 2.5rem;
+  .inicio {
     position: relative;
-    top: -5rem;
-    left: 14rem;
+    top: -38px;
+    left: 4px;
     right: 0;
     bottom: 0;
   }
-  .articulo-productos-f3 .articulo-productos-f4 .articulo-productos-f5 .articulo-productos-f6 {
+  .menu-responsive {
+    position: relative;
+    top: 31px;
+    left: 37px;
+    right: 0;
+    bottom: 0;
+  }
+  .articulo-productos-f3, .articulo-productos-f4, .articulo-productos-f5, .articulo-productos-f6 {
     display: none;
   }
   .productos-productos {
@@ -699,21 +697,12 @@ h2 {
     justify-items: center;
     align-items: center;
   }
-  .pagina-h1-resenia-carrito, .pagina-h1-contacto, .h1-productos {
+  .pagina-h1-resenia-carrito, .pagina-h1-contacto{
     font-family: "Faculty Glyphic";
     font-size: 2.5rem;
     position: relative;
-    top: 0rem;
-    left: 11rem;
-    right: 0;
-    bottom: 0;
-  }
-  .pagina-h1-contacto {
-    font-family: "Faculty Glyphic";
-    font-size: 2.5rem;
-    position: relative;
-    top: 0rem;
-    left: 11rem;
+    top: 1rem;
+    left: 14rem;
     right: 0;
     bottom: 0;
   }
@@ -724,7 +713,7 @@ h2 {
   /*CARRITO*/
   #carrito, .compra {
     position: relative;
-    top: -2rem;
+    top: 1rem;
     left: 7rem;
     right: 0;
     bottom: 0;
@@ -746,8 +735,10 @@ h2 {
     bottom: 0rem;
   }
   .input-cantidad-carrito {
-    top: -13.98rem;
-    left: 12.5rem;
+    height: 1.3rem;
+    width: 2rem;
+    top: -14.3rem;
+    left: 14.5rem;
     right: 0;
     bottom: 0;
   }
@@ -758,10 +749,45 @@ h2 {
     bottom: 0;
   }
   .boton-comprar {
-    top: 0;
+    top: -8rem;
     left: 3.5rem;
     right: 0;
     bottom: 7rem;
+  }
+  .form-right {
+    top: -1rem;
+    left: -12rem;
+    right: 0;
+    bottom: 0;
+  }
+  .menu-responsive-carrito {
+    position: relative;
+    top: 2rem;
+    left: 3.5rem;
+    right: 0;
+    bottom: 0;
+    height: 10rem;
+  }
+  .h1-productos {
+    font-family: "Faculty Glyphic";
+    font-size: 2.5rem;
+    position: relative;
+    top: 1rem;
+    left: 15rem;
+    right: 0;
+    bottom: 0;
+  }
+  .red-social {
+    display: none;
+  }
+  .h3-contactos {
+    top: 0;
+    left: 8rem;
+    right: 0;
+    bottom: 0;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
