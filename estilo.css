@@ -499,6 +499,7 @@ h2 {
 #carrito, .compra {
   font-family: "Faculty Glyphic";
   font-size: 20px;
+  height: auto;
 }
 
 .div-imagen-producto-carrito {
@@ -602,14 +603,14 @@ h2 {
   }
   .menu-index {
     position: relative;
-    top: 36px;
-    left: -154px;
+    top: 35px;
+    left: -160px;
     right: 0;
     bottom: 0;
     margin: 30px;
     padding: 0;
     font-size: 14px;
-    gap: 9px;
+    gap: 5px;
     display: grid;
     grid-template-rows: 1fr;
   }
@@ -632,6 +633,7 @@ h2 {
     bottom: 0;
     margin: 3px;
     gap: 1rem;
+    font-size: 11px;
   }
   h4 {
     display: none;
@@ -672,6 +674,13 @@ h2 {
     right: 0;
     bottom: 0;
   }
+  .menu-responsive-reseñas {
+    position: relative;
+    top: 31px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+  }
   .articulo-productos-f3, .articulo-productos-f4, .articulo-productos-f5, .articulo-productos-f6 {
     display: none;
   }
@@ -691,13 +700,17 @@ h2 {
   .reseña-not {
     display: none;
   }
+  .reseñas {
+    background-color: #ffeddf;
+  }
   .resenias-general {
     display: block;
-    justify-content: center;
     justify-items: center;
     align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
   }
-  .pagina-h1-resenia-carrito, .pagina-h1-contacto{
+  .pagina-h1-resenia-carrito, .pagina-h1-contacto, .h1-productos {
     font-family: "Faculty Glyphic";
     font-size: 2.5rem;
     position: relative;
@@ -719,6 +732,9 @@ h2 {
     bottom: 0;
     font-size: 2.5rem;
   }
+  #carrito img, .compra img {
+    width: 5.5rem;
+  }
   .div-imagen-producto-carrito {
     margin-left: -4rem;
   }
@@ -727,12 +743,14 @@ h2 {
     left: 8rem;
     right: 0;
     bottom: 0;
+    font-size: 1rem;
   }
   .precio-carrito {
     top: -10.5rem;
     left: 7rem;
     right: 0rem;
     bottom: 0rem;
+    font-size: 0.7rem;
   }
   .input-cantidad-carrito {
     height: 1.3rem;
@@ -741,22 +759,25 @@ h2 {
     left: 14.5rem;
     right: 0;
     bottom: 0;
+    font-size: 0.7rem;
   }
   .boton-eliminar {
     top: -13.5rem;
     left: 10rem;
     right: 0;
     bottom: 0;
+    font-size: 0.7rem;
   }
   .boton-comprar {
-    top: -8rem;
-    left: 3.5rem;
+    top: -11rem;
+    left: 5.5rem;
     right: 0;
     bottom: 7rem;
+    font-size: 0.7rem;
   }
   .form-right {
     top: -1rem;
-    left: -12rem;
+    left: -10rem;
     right: 0;
     bottom: 0;
   }
@@ -782,13 +803,18 @@ h2 {
   }
   .h3-contactos {
     top: 0;
-    left: 8rem;
+    left: 6rem;
     right: 0;
     bottom: 0;
   }
   body {
     overflow-x: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
   }
+}
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=estilo.css.map */

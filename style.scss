@@ -458,6 +458,7 @@ h2{
 
 #carrito {
     @include fuente("Faculty Glyphic", 20px);
+    height: auto;
 }
 
 .compra{
@@ -550,10 +551,10 @@ h2{
 
     .menu-index{
         @include position(relative);
-        @include alineacion(36px, 0, -154px, 0);
+        @include alineacion(35px, 0, -160px, 0);
         @include margin-padding(30px, 0);
         font-size: 14px;
-        gap: 9px;
+        gap: 5px;
         display: grid;
         grid-template-rows: 1fr;
     }
@@ -578,6 +579,7 @@ h2{
         @include alineacion(0.5rem,0,0,0);
         margin: 3px;
         gap: 1rem;
+        font-size:11px;
     }
 
     h4{
@@ -622,6 +624,11 @@ h2{
         @include alineacion(31px,0,37px,0);
     }
 
+    .menu-responsive-reseñas{
+        @include position(relative);
+        @include alineacion(31px,0,50px,0);
+    }
+
     .articulo-productos-f3, .articulo-productos-f4, .articulo-productos-f5, .articulo-productos-f6{
         display: none;
     }
@@ -645,10 +652,16 @@ h2{
         display: none;
     }
 
+    .reseñas{
+        background-color: #ffeddf;
+    }
+
     .resenias-general{
-        @include display(block, center);
+        display: block;
         justify-items: center;
         align-items: center;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .pagina-h1-resenia-carrito, .pagina-h1-contacto{
@@ -669,6 +682,9 @@ h2{
         @include position(relative);
         @include alineacion(1rem, 0, 7rem, 0);
         font-size: 2.5rem;
+        img{
+            width: 5.5rem;
+        }
     }
 
     .div-imagen-producto-carrito{
@@ -677,27 +693,32 @@ h2{
 
     .nombre-carrito{
         @include alineacion(-10rem, 0, 8rem, 0);
+        font-size: 1rem;
     }
 
     .precio-carrito{
         @include alineacion(-10.5rem, 0rem, 7rem, 0rem);
+        font-size: 0.7rem;
     }
 
     .input-cantidad-carrito{
         @include alto-ancho(1.3rem, 2rem);
         @include alineacion(-14.3rem, 0, 14.5rem, 0);
+        font-size: 0.7rem;
     }
 
     .boton-eliminar{
         @include alineacion(-13.5rem, 0, 10rem, 0);
+        font-size: 0.7rem;
     }
 
     .boton-comprar{
-        @include alineacion(-8rem, 7rem, 3.5rem, 0);
+        @include alineacion(-11rem, 7rem, 5.5rem, 0);
+        font-size: 0.7rem;
     }
 
     .form-right{
-        @include alineacion(-1rem, 0, -12rem, 0);
+        @include alineacion(-1rem, 0, -10rem, 0);
     }
 
     .menu-responsive-carrito{
@@ -717,10 +738,16 @@ h2{
     }
 
     .h3-contactos{
-        @include alineacion(0, 0, 8rem, 0);
+        @include alineacion(0, 0, 6rem, 0);
     }
 
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 }
+
+body{
+        overflow-x: hidden;
+    }
