@@ -6,6 +6,10 @@
     <title>Fabianidades</title>
     <link rel="stylesheet" href="../estilo.css">
     <link rel="shortcut icon" href="../assets/FABIANIDADES.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Ribeye&display=swap');
+    </style>
   </head>
   <body>
 
@@ -26,14 +30,12 @@
       </nav>
     
     </header>
-
-    <h4 class="h4-carrito">Productos</h4>
     
     <div class="wpp-carrito"><a href="https://wa.me/5491176109950"><img id="wpp" src="../assets/WPP.png" alt="Logo de Whatsapp"></a></div>
     
     <section id="carrito">
 
-      <div class="producto-carrito">
+      <div class="producto-carrito" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
         <div class="div-imagen-producto-carrito">
           <img class="imagen-producto-carrito" src="../assets/temáticos.png" alt="Llavero temático de gastronomía" width="140px">
         </div>
@@ -44,7 +46,7 @@
         <p class="boton-eliminar">ELIMINAR</p>
       </div>
 
-      <div class="producto-carrito">
+      <div class="producto-carrito" data-aos="zoom-in" data-aos-duration="1010" data-aos-once="true">
         <div class="div-imagen-producto-carrito">
           <img class="imagen-producto-carrito" src="../assets/1er año.png" alt="Llavero 1° año" width="140px">
         </div>
@@ -55,7 +57,7 @@
         <p class="boton-eliminar">ELIMINAR</p>
       </div>
 
-      <div class="boton-compra">
+      <div class="boton-compra" data-aos="zoom-in" data-aos-duration="1010" data-aos-once="true">
         <p class="boton-comprar">COMPRAR</p>
       </div>
 
@@ -90,7 +92,10 @@
         </ul>
       </div>
     </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
   <main></main>
 </html>

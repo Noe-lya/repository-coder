@@ -6,6 +6,10 @@
     <title>Fabianidades</title>
     <link rel="stylesheet" href="../estilo.css">
     <link rel="shortcut icon" href="../assets/FABIANIDADES.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Ribeye&display=swap');
+    </style>
 </head>
 <body>
 
@@ -22,58 +26,48 @@
         
     </header>
     
-    <section class="redes">
+    <section class="section-contacto" data-aos="zoom-in" data-aos-duration="1000">
         <a href="https://wa.me/5491176109950"><img id="wpp" src="../assets/WPP.png" alt="Logo de Whatsapp"></a>
+
+    <section class="redes" data-aos="zoom-in" data-aos-duration="1010">
         <ul><a class="link" href="https://wa.me/5491176109950"><img class="wig" src="../assets/WPP.png" alt="Logo de Whatsapp" width="40px"></a></ul><h2>+54 9 1176109950</h2>
         <ul><a class="link" href="https://www.instagram.com/fabianidadess_/"><img class="wig" src="../assets/IG.png" alt="Logo de Instagram" width="35px"></a></ul><h2>@FABIANIDADESS_</h2>       
         <ul><a class="link" href="mailto:fabianidades@gmail.com"><img class="wig" src="../assets/GMAIL.png" alt="Logo de GMAIL" width="35px"></a></ul><h2>fabianidades@gmail.com</h2>
     </section>
-    
-    <h3>Completá el formulario y nosotras te contactamos</h3>
-    
-    <section class="formulario">
-        <form action="/submit" method="post">
-            
-            <ul>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" id="Nombre">
-            </ul>
-            
-            <ul>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido" id="Apellido">
-            </ul>
-            
-            <ul>
-                <label for="Teléfono">Teléfono</label>
-                <input type="number" name="Teléfono" id="Teléfono">
-            </ul>
-           
-            <ul>    
-                <label for="Evento">Evento</label>
-                <input type="radio" name="Evento">
-                <label for="15">15 AÑOS</label>
-                <input type="radio" name="Evento">
-                <label for="1">1° AÑO</label>
-                <input type="radio" name="Evento">
-                <label for="Bautismo">BAUTISMO</label>
-                <input type="radio" name="Evento">
-                <label for="Comunion">COMUNIÓN</label>
-            </ul>
-            
-            <ul>
-                <label for="Cantidad">Cantidad a preguntar</label>
-                <input type="number" name="Cantidad">
-            </ul>
-            
-            <ul>
-                <button>ENVIAR</button>
-            </ul>
+    <h3 class="h3-contactos" data-aos="zoom-in" data-aos-duration="1010">¡Completá el formulario <br> y nosotras te contactamos!</h3>
+    <section class="form-right">
+      
+        <form class="formulario" data-aos="zoom-in" data-aos-duration="1010">          
 
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+
+          <label for="Cantidad">Cantidad</label>
+          <input type="number" name="Cantidad" min="1" required>
+
+          <label for="Evento">Evento</label>
+          <input list="Evento" name="Evento" required>
+
+          <datalist id="Evento">
+            <option value="15 AÑOS">
+            <option value="1° AÑO">
+            <option value="BAUTISMO">
+            <option value="COMUNIÓN">
+            <option value="TEMÁTICOS">
+            <option value="STRAPS"></option>
+          </datalist>
+          
+          <button type="submit" class="boton-enviar">ENVIAR</button>
         </form>
 
     </section>
-
+</section>
     <footer>
       <div class="div-footer">
         <ul class="footer-1">
@@ -103,6 +97,9 @@
         </ul>
       </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

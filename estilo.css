@@ -48,7 +48,7 @@ header {
   justify-content: center;
 }
 
-.pagina-h1-resenia-carrito, .pagina-h1-productos, .pagina-h1-contacto {
+.pagina-h1-resenia-carrito, .h1-productos, .pagina-h1-contacto {
   display: block;
   justify-content: center;
   text-align: center;
@@ -89,9 +89,16 @@ header {
 .boton-menu {
   list-style: none;
 }
-.boton-menu:hover {
-  background-color: black;
-  color: white !important;
+.boton-menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.boton-menu a:hover {
+  transform: scale(1.05);
+  color: white;
   border-radius: 0.5rem;
 }
 
@@ -155,7 +162,7 @@ h3 {
   animation: fadeSlideIn 2s ease forwards;
   opacity: 0;
   transform: translateY(30px);
-  font-family: "Georgia";
+  font-family: "Faculty Glyphic";
   font-size: 21px;
   color: #5a2a6c;
   line-height: 1.6;
@@ -247,7 +254,7 @@ button:hover {
   box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.4);
 }
 
-.boton-ver-mas, .boton-comprar, .boton-eliminar, .input-cantidad-carrito, .precio-carrito, .input-cantidad, .boton-productos {
+.boton-ver-mas, .boton-comprar, .boton-eliminar, .input-cantidad-carrito, .precio-carrito, .boton-enviar, .input-cantidad, .boton-productos {
   position: relative;
   top: -9rem;
   left: 0;
@@ -268,7 +275,7 @@ button:hover {
   padding: 10px 20px;
   display: inline-block;
 }
-.boton-ver-mas:hover, .boton-comprar:hover, .boton-eliminar:hover, .input-cantidad-carrito:hover, .precio-carrito:hover, .input-cantidad:hover, .boton-productos:hover {
+.boton-ver-mas:hover, .boton-comprar:hover, .boton-eliminar:hover, .input-cantidad-carrito:hover, .precio-carrito:hover, .boton-enviar:hover, .input-cantidad:hover, .boton-productos:hover {
   transform: scale(1.05);
 }
 
@@ -294,7 +301,7 @@ button:hover {
 }
 
 /*INDEX*/
-.pagina-h1-productos {
+.h1-productos {
   max-height: 30rem;
   left: 39px;
   top: -1rem;
@@ -339,7 +346,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-.precio {
+.precio, .formulario input {
   color: #8b0066;
   border-radius: 50% 20%/10% 40%;
   border-radius: 15px;
@@ -357,7 +364,7 @@ button:hover {
   margin: 2px 2px 2px 2px;
   padding: 10px 20px;
 }
-.precio:hover {
+.precio:hover, .formulario input:hover {
   transform: scale(1.05);
 }
 
@@ -384,6 +391,8 @@ button:hover {
 }
 
 .resenia {
+  font-family: "Faculty Glyphic";
+  font-size: 16px;
   top: -233px;
 }
 
@@ -414,6 +423,11 @@ button:hover {
   justify-content: flex-start;
   flex-direction: column;
   font-family: “Faculty Glyphic”;
+  position: relative;
+  top: 5rem;
+  left: 7rem;
+  right: 0rem;
+  bottom: 0rem;
 }
 
 .wig {
@@ -430,13 +444,55 @@ h2 {
   left: 99px;
   right: 0;
   bottom: 61px;
-  font-family: “Faculty Glyphic”;
+  font-family: "Faculty Glyphic";
   font-size: 20px;
 }
 
 .formulario {
-  justify-content: flex-end;
-  justify-content: right;
+  max-width: 12rem;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  font-family: "Faculty Glyphic";
+  font-size: 16px;
+}
+.formulario input {
+  top: -2rem;
+  left: 5rem;
+  right: 0;
+  bottom: 0;
+}
+
+.boton-enviar {
+  top: -1.5rem;
+  left: 126px;
+  right: 0;
+  bottom: 0;
+}
+
+.h3-contactos {
+  position: relative;
+  top: -21rem;
+  left: 42rem;
+  right: 0;
+  bottom: 0;
+}
+
+.form-right {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: -21rem;
+  left: -27rem;
+  right: 0rem;
+  bottom: 0rem;
+  gap: 2rem;
+}
+
+.section-contacto {
+  height: 40rem;
 }
 
 /*CARRITO*/
@@ -537,23 +593,17 @@ h2 {
     font-size: 2.5rem;
     position: relative;
     top: auto;
-    left: 9rem;
+    left: 14rem;
     right: 0;
     bottom: 0;
   }
   .logo {
-    position: relative;
-    top: 14px;
-    left: 3.5rem;
-    right: 0;
-    bottom: 0;
-    width: 4rem;
-    margin-left: -0.5rem;
+    display: none;
   }
   .menu-index {
     position: relative;
     top: 36px;
-    left: -177px;
+    left: -154px;
     right: 0;
     bottom: 0;
     margin: 30px;
@@ -562,6 +612,13 @@ h2 {
     gap: 9px;
     display: grid;
     grid-template-rows: 1fr;
+  }
+  .menu-inicio {
+    position: relative;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   .boton-menu {
     grid-row: 1/2;
@@ -584,12 +641,7 @@ h2 {
     gap: 1rem;
   }
   h4 {
-    position: relative;
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 1.5rem;
+    display: none;
   }
   h3 {
     font-size: 15px;
@@ -613,6 +665,15 @@ h2 {
     grid-row: 2/3;
   }
   /*PRODUCTOS*/
+  .h1-productos {
+    font-family: "Faculty Glyphic";
+    font-size: 2.5rem;
+    position: relative;
+    top: -5rem;
+    left: 14rem;
+    right: 0;
+    bottom: 0;
+  }
   .articulo-productos-f3 .articulo-productos-f4 .articulo-productos-f5 .articulo-productos-f6 {
     display: none;
   }
@@ -638,12 +699,21 @@ h2 {
     justify-items: center;
     align-items: center;
   }
-  #pagina-h1-resenia-carrito #pagina-h1-contacto {
-    font-family: “Faculty Glyphic”;
+  .pagina-h1-resenia-carrito, .pagina-h1-contacto, .h1-productos {
+    font-family: "Faculty Glyphic";
     font-size: 2.5rem;
     position: relative;
-    top: -6rem;
-    left: 7rem;
+    top: 0rem;
+    left: 11rem;
+    right: 0;
+    bottom: 0;
+  }
+  .pagina-h1-contacto {
+    font-family: "Faculty Glyphic";
+    font-size: 2.5rem;
+    position: relative;
+    top: 0rem;
+    left: 11rem;
     right: 0;
     bottom: 0;
   }
@@ -672,8 +742,8 @@ h2 {
   .precio-carrito {
     top: -10.5rem;
     left: 7rem;
-    right: 0;
-    bottom: 0;
+    right: 0rem;
+    bottom: 0rem;
   }
   .input-cantidad-carrito {
     top: -13.98rem;
@@ -692,17 +762,6 @@ h2 {
     left: 3.5rem;
     right: 0;
     bottom: 7rem;
-  }
-  .pagina-h1-resenia-carrito, .pagina-h1-contacto, .pagina-h1-productos {
-    font-size: 2.5rem;
-    position: relative;
-    top: -2rem;
-    left: 7rem;
-    right: 0;
-    bottom: 0;
-  }
-  .h4-carrito {
-    display: none;
   }
 }
 

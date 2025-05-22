@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-@mixin fuente($fuente,$tamaño-fuente: 1rem){
+@mixin fuente($fuente, $tamaño-fuente){
     font-family: $fuente;
     font-size: $tamaño-fuente;
 }
@@ -118,10 +118,18 @@ header{
 
 .boton-menu{
   list-style: none;
-  &:hover{
-    background-color: black;
-    color: white !important;
-    border-radius: 0.5rem;
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        color: white;
+        border-radius: 0.5rem;
+    }
   }
 }
 
@@ -182,7 +190,7 @@ h3{
     animation: fadeSlideIn 2s ease forwards;
     opacity: 0;
     transform: translateY(30px);
-    @include fuente("Georgia", 21px);
+    @include fuente("Faculty Glyphic", 21px);
     color: #5a2a6c; 
     line-height: 1.6;
     text-align: center;
@@ -287,7 +295,7 @@ button{
 
 /*INDEX*/
 
-.pagina-h1-productos{
+.h1-productos{
     @extend .pagina-h1-resenia-carrito;
     max-height: 30rem;
     left: 39px;
@@ -369,6 +377,7 @@ button{
 
 .resenia{
     @extend .nombre;
+    @include fuente("Faculty Glyphic", 16px);
     top: -233px; 
 }
 
@@ -397,7 +406,8 @@ button{
     @include display (flex, flex-start);
     flex-direction: column;
     font-family: “Faculty Glyphic”;
-    
+    @include position(relative);
+    @include alineacion(5rem,0rem , 7rem, 0rem);
 }
 
 .wig{
@@ -408,13 +418,40 @@ button{
 h2{
     @include position (relative);
     @include alineacion(0, 61px, 99px, 0);
-    @include fuente (“Faculty Glyphic”, 20px);
+    @include fuente ("Faculty Glyphic", 20px);
 }
 
 .formulario{
     @extend .redes;
-    justify-content: flex-end;
-    justify-content: right; 
+    max-width: 12rem;
+    @include position(relative);
+    @include alineacion(1rem, 1rem, 1rem, 1rem);
+    @include fuente("Faculty Glyphic", 16px);
+    input{
+        @extend .precio;
+        @include alineacion(-2rem, 0, 5rem, 0);
+    }
+}
+
+.boton-enviar{
+    @extend .boton-ver-mas;
+    @include alineacion(-1.5rem, 0, 126px, 0);
+}
+
+.h3-contactos{
+    @include position(relative);
+    @include alineacion(-21rem, 0, 42rem, 0);
+}
+
+.form-right{
+    @include display (flex, end);
+    @include position(relative);
+    @include alineacion(-21rem, 0rem, -27rem, 0rem);
+    gap: 2rem;
+}
+
+.section-contacto{
+    height: 40rem;
 }
 
 /*CARRITO*/
@@ -504,24 +541,26 @@ h2{
     #marca{
         font-size: 2.5rem;
         @include position(relative);
-        @include alineacion(auto, 0, 9rem, 0);
+        @include alineacion(auto, 0, 14rem, 0);
     }
 
     .logo{
-        @include position(relative);
-        @include alineacion(14px, 0, 3.5rem, 0);
-        width: 4rem;
-        margin-left: -0.5rem;
+        display: none;
     }
 
     .menu-index{
         @include position(relative);
-        @include alineacion(36px, 0, -177px, 0);
+        @include alineacion(36px, 0, -154px, 0);
         @include margin-padding(30px, 0);
         font-size: 14px;
         gap: 9px;
         display: grid;
         grid-template-rows: 1fr;
+    }
+
+    .menu-inicio{
+        @include position(relative);
+        @include alineacion(1rem, 0, 0, 0);
     }
 
     .boton-menu{
@@ -547,9 +586,7 @@ h2{
     }
 
     h4{
-        @include position(relative);
-        @include alineacion(auto, 0, 0, 0);
-        font-size: 1.5rem;
+        display: none;
     }
 
     h3{
@@ -580,6 +617,12 @@ h2{
 
     /*PRODUCTOS*/
     
+    .h1-productos{
+        @include fuente("Faculty Glyphic", 2.5rem);
+        @include position(relative);
+        @include alineacion(-5rem, 0, 14rem, 0);
+    }
+
     .articulo-productos-f3 .articulo-productos-f4 .articulo-productos-f5 .articulo-productos-f6{
         display: none;
     }
@@ -609,10 +652,16 @@ h2{
         align-items: center;
     }
 
-    #pagina-h1-resenia-carrito #pagina-h1-contacto{
-        @include fuente (“Faculty Glyphic”, 2.5rem);
+    .pagina-h1-resenia-carrito {
+        @include fuente ("Faculty Glyphic", 2.5rem);
         @include position (relative);
-        @include alineacion(-6rem, 0, 7rem, 0);  
+        @include alineacion(0rem, 0, 11rem, 0);  
+    }
+
+    .pagina-h1-contacto{
+        @include fuente("Faculty Glyphic", 2.5rem);
+        @include position (relative);
+        @include alineacion(0rem, 0, 11rem, 0);
     }
 
     /*CONTACTO*/
@@ -638,7 +687,7 @@ h2{
     }
 
     .precio-carrito{
-        @include alineacion(-10.5rem, 0, 7rem, 0);
+        @include alineacion(-10.5rem, 0rem, 7rem, 0rem);
     }
 
     .input-cantidad-carrito{
@@ -652,15 +701,4 @@ h2{
     .boton-comprar{
         @include alineacion(0, 7rem, 3.5rem, 0);
     }
-
-    .pagina-h1-resenia-carrito{
-        font-size: 2.5rem;
-        @include position(relative);
-        @include alineacion(-2rem, 0, 7rem, 0);
-    }
-
-    .h4-carrito{
-        display: none;
-    }
-
 }
