@@ -808,13 +808,11 @@ h2 {
     bottom: 0;
   }
   body {
-    overflow-x: hidden !important; 
+    overflow-x: hidden;
     box-sizing: border-box;
     max-width: 100%;
   }
 }
 body {
-  overflow-x: hidden !important;
-}
-
-/*# sourceMappingURL=estilo.css.map */
+  overflow-x: hidden;
+}/*# sourceMappingURL=style.css.map */
